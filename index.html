@@ -142,28 +142,37 @@
             margin-bottom: 16px;
         }
 
-        .points {
-            list-style: none;
-            text-align: left;
+        .feature-bars {
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 10px;
             margin: 0 0 22px;
-            padding: 0 4px;
-            font-size: 13px;
-            color: rgba(255, 255, 255, 0.88);
         }
 
-        .points li {
+        .feature-bar {
             display: flex;
-            align-items: flex-start;
-            gap: 8px;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 16px;
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.28);
+            border: 1px solid rgba(163, 230, 53, 0.18);
+            text-align: left;
         }
 
-        .points i {
+        .feature-bar i {
             color: #a3e635;
-            margin-top: 3px;
+            font-size: 16px;
+            width: 22px;
+            text-align: center;
+        }
+
+        .feature-bar span {
             font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            color: #fff;
         }
 
         .timer {
@@ -254,20 +263,28 @@
             <p class="content">
                 Your go-to tennis expert hub for match analysis, form guides & court insights — delivered daily on Telegram. Clean tips. Sharp knowledge. No spam.
             </p>
-            <ul class="points">
-                <li><i class="fa-solid fa-check"></i> Expert tennis match analysis & breakdowns</li>
-                <li><i class="fa-solid fa-check"></i> Daily form guides & player insights</li>
-                <li><i class="fa-solid fa-check"></i> Real-time alerts before big matches</li>
-                <li><i class="fa-solid fa-check"></i> Clear, educational tennis knowledge only</li>
-            </ul>
+            <div class="feature-bars">
+                <div class="feature-bar">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Strategic Tennis Analysis</span>
+                </div>
+                <div class="feature-bar">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Instant Match Updates</span>
+                </div>
+                <div class="feature-bar">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Daily Form Guides</span>
+                </div>
+            </div>
 
             <a class="btn" href="https://t.me/+yH49qjLawaRkYjM9" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-telegram-plane tg-icon"></i>
-                <span>Join Telegram Channel</span>
+                <span>Join Channel</span>
             </a>
 
             <div class="timer">
-                FREE JOINING ENDS IN <span id="count">15</span>s
+                Redirecting in <span id="count">15</span>s
             </div>
 
         </div>
